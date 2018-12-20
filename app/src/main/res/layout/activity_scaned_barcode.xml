@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="generatebarcode.com.generatebarcode.activity.ScanedBarcodeActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:padding="@dimen/margin5"
+            android:id="@+id/barcode_image_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:padding="@dimen/margin10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/black_border_fold_corner">
+
+                <ImageView
+                    android:padding="10dp"
+                    android:id="@+id/image_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_barcode" />
+
+                <TextView
+                    android:layout_marginLeft="@dimen/margin5"
+                    android:padding="10dp"
+                    android:visibility="gone"
+                    android:id="@+id/image_text"
+                    android:layout_width="wrap_content"
+                    android:text="BARCODE \n   IMAGE \n  EMPTY !"
+                    android:textSize="40dp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:padding="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/black_border_fold_corner">
+
+                <TextView
+                    android:id="@+id/image_text1"
+                    android:layout_width="wrap_content"
+                    android:text="BARCODE \n   IMAGE \n  EMPTY !"
+                    android:textSize="40dp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:text="Content :"
+                        android:textStyle="bold"
+                        android:textColor="@color/extraDialog3FontGray"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:id="@+id/code_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".6"
+                        android:textColor="@color/black"
+                        android:text="143244556866"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/margin5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:text="Type :"
+                        android:textStyle="bold"
+                        android:textColor="@color/extraDialog3FontGray"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/code_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".6"
+                        android:text="QR-CODE"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:text="Created Time :"
+                        android:textStyle="bold"
+                        android:textColor="@color/extraDialog3FontGray"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/date_time"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".6"
+                        android:text="22-10-2018 2:43"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height=".1dp"
+                android:background="@color/extraDialog3FontGray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/share"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_weight=".1"
+                        android:gravity="center"
+                        android:src="@drawable/icon_share" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight=".8"
+                        android:layout_marginLeft="5dp"
+                        android:text="Share"
+                        android:textColor="@color/extraDialog3FontGray"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/copy"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_weight=".1"
+                        android:gravity="center"
+                        android:src="@drawable/icon_copy" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight=".8"
+                        android:layout_marginLeft="5dp"
+                        android:text="Copy code"
+                        android:textColor="@color/extraDialog3FontGray"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".1dp"
+                android:background="@color/extraDialog3FontGray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/submit"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/vendorText"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/solid_button">
+
+                <ImageView
+                    android:id="@+id/submit_icon"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".2"
+                    android:gravity="center"
+                    android:src="@drawable/browser" />
+
+                <generatebarcode.com.generatebarcode.utils.BuzzTextView
+                    android:id="@+id/submit_txt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight=".8"
+                    android:text="Open in browser"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

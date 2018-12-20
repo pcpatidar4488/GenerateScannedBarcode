@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/buttonTab"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".9"
+                android:background="@color/colorPrimary"
+                android:gravity="center_horizontal|center_vertical"
+                android:padding="10dp"
+                android:text="Generate Barcode"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_weight=".1">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:src="@drawable/cancel"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/random_generate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Random Generate"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/self_generate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Self Generate" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/codeNameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:paddingTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"/>
+
+
+            <LinearLayout
+               android:visibility="gone"
+                android:id="@+id/self_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:background="@drawable/bg_grey_stroke"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginStart="12dp"
+                android:orientation="vertical">
+
+                <generatebarcode.com.generatebarcode.utils.BuzzEditText
+                    android:id="@+id/input_data"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@android:color/transparent"
+                    android:hint="Input Data"
+                    android:lines="1"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:background="@drawable/bg_grey_stroke"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginStart="12dp"
+                android:orientation="vertical">
+
+                <generatebarcode.com.generatebarcode.utils.BuzzEditText
+                    android:id="@+id/header"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@android:color/transparent"
+                    android:hint="Header"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:background="@drawable/bg_grey_stroke"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginStart="12dp"
+                android:orientation="vertical">
+
+                <generatebarcode.com.generatebarcode.utils.BuzzEditText
+                    android:id="@+id/footer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@android:color/transparent"
+                    android:hint="Footer"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/random_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:background="@drawable/bg_grey_stroke"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="12dp"
+                android:orientation="vertical">
+
+                <generatebarcode.com.generatebarcode.utils.BuzzEditText
+                    android:id="@+id/random_quantity"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@android:color/transparent"
+                    android:hint="Enter barcode quantity"
+                    android:textColor="#000"
+                    android:inputType="numberDecimal"
+                    android:gravity="center"
+                    android:maxLength="3"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonSubmit"
+                style="@style/ButtonColor"
+                android:layout_weight=".5"
+                android:text="Submit"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/buttonPreview"
+                style="@style/ButtonColor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight=".5"
+                android:text="Preview"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <!-- <color name="colorPrimary">#3F51c</color>-->
+    <color name="colorPrimary">#293339</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+   <color name="background">#dedbdb</color>
+   <color name="white">#FFFFFF</color>
+   <color name="yellow">#FFFF00</color>
+   <color name="whiteLikeBg">#efefef</color>
+   <color name="black">#000000</color>
+   <color name="red">#FF0000</color>
+   <color name="blue">#0000FF</color>
+   <color name="lime">#00FF00</color>
+   <color name="brown">#A52A2A</color>
+   <color name="purple">#912CEE</color>
+   <color name="orange">#ff5a00</color>
+   <color name="premiumcolor">#ff9800</color>
+   <color name="left_panel_text_color">#ff9800</color>
+
+    <color name="button_orange">#fe5824</color>
+    <color name="button_white">@android:color/white</color>
+    <color name="button_blue">#40579b</color>
+    <color name="button_green">#43bd42</color>
+    <color name="button_gray">#f1f5f8</color>
+    <color name="button_magenta">#ea2064</color>
+    <color name="button_yellow">#ff9807</color>
+
+    <color name="accent">#caffeb3b</color>
+    <color name="accent_translucent">#caffeb3b</color>
+    <color name="main_menu_bg">#34374a</color>
+    <color name="main_menu_bg_active">#353a4c</color>
+    <color name="main_menu_count_active">#ffffff</color>
+    <color name="main_menu_count_nonactive">#84ff02</color>
+
+    <color name="extraDialog3colorPrimary">#3b6dff</color>
+    <color name="extraDialog3colorPrimaryDark">#3951ff</color>
+    <color name="extraDialog3colorAccent">#3b6dff</color>
+    <color name="extraDialog3grayBg">#dcdcdc</color>
+    <color name="extraDialog3FontGray">#949494</color>
+
+    // menuNavigationcolorPrimary
+    <color name="menuNavigationcolorPrimary">#8f26aa</color>
+    <color name="menuNavigationcolorPrimaryDark">#7824a1</color>
+    <color name="menuNavigationcolorAccent">#8f26aa</color>
+    <color name="menuNavigationmenuBg">#293339</color>
+    <color name="menuNavigationmenuSelected">#2580fc</color>
+
+</resources>
